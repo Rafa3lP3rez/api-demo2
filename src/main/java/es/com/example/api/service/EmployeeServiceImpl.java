@@ -6,13 +6,15 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Repository;
+
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import es.com.example.api.dao.EmployeeRepository;
 import es.com.example.api.entity.Employee;
 
-@Repository
+
+@Service
 public class EmployeeServiceImpl implements EmployeeService {
 
 	private EmployeeRepository employee;
